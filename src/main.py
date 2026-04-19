@@ -9,7 +9,7 @@ def main():
     if sys.argv[0] is None:
         base_path = "/"
     else:
-        base_path = sys.argv[0]
+        base_path = sys.argv
 
     static_to_public("static", "docs")
     generate_pages_recursively("content", "template.html", "docs", base_path)
