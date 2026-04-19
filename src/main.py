@@ -6,7 +6,7 @@ from static_to_public import static_to_public
 
 
 def main():
-    if sys.argv[1] is None:
+    if len(sys.argv) < 2:
         base_path = "/"
     else:
         base_path = sys.argv[1]
